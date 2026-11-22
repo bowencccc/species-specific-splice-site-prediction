@@ -1,0 +1,49 @@
+{
+  "species": "human",
+  "reference": "CHESS 3.1.3",
+  "data_root": "/home/bowencccc/ssm_splice_site/data_feats_10kb",
+  "selection": "existing NPZ windows selected by chromosome; no regeneration",
+  "window_size": 10000,
+  "stride": 5000,
+  "splits": {
+    "train": {
+      "chromosomes": [
+        "chr2",
+        "chr3",
+        "chr4",
+        "chr5",
+        "chr6",
+        "chr8",
+        "chr10",
+        "chr11",
+        "chr12",
+        "chr13",
+        "chr14",
+        "chr16",
+        "chr17",
+        "chr18",
+        "chr19",
+        "chr20",
+        "chr21",
+        "chr22",
+        "chrX",
+        "chrY"
+      ],
+      "window_count": 182695
+    },
+    "val": {
+      "chromosomes": [
+        "chr7",
+        "chr15"
+      ],
+      "window_count": 20504
+    },
+    "test": {
+      "chromosomes": [
+        "chr1",
+        "chr9"
+      ],
+      "window_count": 31549
+    }
+  }
+}

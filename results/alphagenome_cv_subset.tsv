@@ -1,0 +1,10 @@
+scope	model	role	n_candidates	n_positives	AP
+chr1+chr9_canonical_Apr16_fold3_valid	alphagenome	donor	20425	6275	0.9340812826194601
+chr1+chr9_canonical_Apr16_fold3_valid	cnn_mamba	donor	20425	6275	0.9325737698537055
+chr1+chr9_canonical_Apr16_fold3_valid	spliceai	donor	20425	6275	0.9183090038037245
+chr1+chr9_canonical_Apr16_fold3_valid	alphagenome	acceptor	21688	6214	0.9308198474391755
+chr1+chr9_canonical_Apr16_fold3_valid	cnn_mamba	acceptor	21688	6214	0.9354757786176464
+chr1+chr9_canonical_Apr16_fold3_valid	spliceai	acceptor	21688	6214	0.9182196278887995
+chr1+chr9_canonical_Apr16_fold3_valid	alphagenome	mean	42113	12489	0.9324505650293178
+chr1+chr9_canonical_Apr16_fold3_valid	cnn_mamba	mean	42113	12489	0.934024774235676
+chr1+chr9_canonical_Apr16_fold3_valid	spliceai	mean	42113	12489	0.918264315846262

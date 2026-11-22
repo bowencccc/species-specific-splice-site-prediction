@@ -1,0 +1,17 @@
+{
+  "species": "arabidopsis",
+  "model": "alphagenome",
+  "input": "data/site_scores/arabidopsis.alphagenome.tsv.gz",
+  "metric": "sklearn.metrics.average_precision_score (exact tied-score handling)",
+  "donor": {
+    "n_candidates": 3167995,
+    "n_positives": 34461,
+    "AP": 0.6822500404522226
+  },
+  "acceptor": {
+    "n_candidates": 3592935,
+    "n_positives": 35037,
+    "AP": 0.6250488292416415
+  },
+  "mean_AP": 0.653649434846932
+}

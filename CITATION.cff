@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software or benchmark, please cite the qualifying-project paper."
+title: "Species-Specific Splice Site Prediction with a Hybrid Convolutional and Bidirectional Selective State Space Model"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Bowen
+    email: bchen103@jhu.edu
+    affiliation: Johns Hopkins University
+  - family-names: Zimin
+    given-names: Aleksey V.
+    email: alekseyz@jhu.edu
+    affiliation: Johns Hopkins University
+license: MIT
+version: 1.0.0
+date-released: 2026-11-22

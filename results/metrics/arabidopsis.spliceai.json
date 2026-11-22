@@ -1,0 +1,17 @@
+{
+  "species": "arabidopsis",
+  "model": "spliceai",
+  "input": "data/site_scores/arabidopsis.spliceai.tsv.gz",
+  "metric": "sklearn.metrics.average_precision_score (exact tied-score handling)",
+  "donor": {
+    "n_candidates": 3167995,
+    "n_positives": 34461,
+    "AP": 0.7155215922045006
+  },
+  "acceptor": {
+    "n_candidates": 3592935,
+    "n_positives": 35037,
+    "AP": 0.61174500085059
+  },
+  "mean_AP": 0.6636332965275453
+}

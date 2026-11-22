@@ -1,0 +1,17 @@
+{
+  "species": "chicken",
+  "model": "spliceai",
+  "input": "data/site_scores/chicken.spliceai.tsv.gz",
+  "metric": "sklearn.metrics.average_precision_score (exact tied-score handling)",
+  "donor": {
+    "n_candidates": 20466346,
+    "n_positives": 28964,
+    "AP": 0.8139028352353006
+  },
+  "acceptor": {
+    "n_candidates": 28351357,
+    "n_positives": 27948,
+    "AP": 0.8241047237266329
+  },
+  "mean_AP": 0.8190037794809668
+}

@@ -1,0 +1,19 @@
+name: splice-ssm
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.6.0
+  - pytorch-cuda=12.4
+  - numpy=2.2
+  - pandas
+  - scipy
+  - scikit-learn=1.7
+  - matplotlib
+  - pyfaidx
+  - pip
+  - pip:
+      - causal-conv1d==1.6.1
+      - einops==0.8.2

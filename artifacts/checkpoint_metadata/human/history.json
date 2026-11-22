@@ -1,0 +1,102 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.005772399590522529,
+    "validation": {
+      "loss": 0.004158585063115093,
+      "donor": {
+        "AP": 0.8721578974864822,
+        "candidates": 10841935,
+        "positives": 45607
+      },
+      "acceptor": {
+        "AP": 0.8703041738742947,
+        "candidates": 14626569,
+        "positives": 45368
+      },
+      "mean_AP": 0.8712310356803885
+    },
+    "elapsed_seconds": 10711.708366155624,
+    "lr_end": 0.0002717425883907195
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.004036746676154959,
+    "validation": {
+      "loss": 0.00399672774050855,
+      "donor": {
+        "AP": 0.8801699419430483,
+        "candidates": 10841935,
+        "positives": 45607
+      },
+      "acceptor": {
+        "AP": 0.8807650003336593,
+        "candidates": 14626569,
+        "positives": 45368
+      },
+      "mean_AP": 0.8804674711383538
+    },
+    "elapsed_seconds": 10686.75761127472,
+    "lr_end": 0.0001968280474438012
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.00363241604660233,
+    "validation": {
+      "loss": 0.0037159977516629437,
+      "donor": {
+        "AP": 0.8930997255136299,
+        "candidates": 10841935,
+        "positives": 45607
+      },
+      "acceptor": {
+        "AP": 0.8945850632069988,
+        "candidates": 14626569,
+        "positives": 45368
+      },
+      "mean_AP": 0.8938423943603144
+    },
+    "elapsed_seconds": 10685.369198322296,
+    "lr_end": 0.00010396604800128605
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.003320093375613819,
+    "validation": {
+      "loss": 0.0035517565874354966,
+      "donor": {
+        "AP": 0.8983346906740171,
+        "candidates": 10841935,
+        "positives": 45607
+      },
+      "acceptor": {
+        "AP": 0.9013706055891848,
+        "candidates": 14626569,
+        "positives": 45368
+      },
+      "mean_AP": 0.8998526481316009
+    },
+    "elapsed_seconds": 10685.905498027802,
+    "lr_end": 2.8747159642502042e-05
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.0031195790717902763,
+    "validation": {
+      "loss": 0.003510462700225036,
+      "donor": {
+        "AP": 0.9010893957714426,
+        "candidates": 10841935,
+        "positives": 45607
+      },
+      "acceptor": {
+        "AP": 0.9044742011465727,
+        "candidates": 14626569,
+        "positives": 45368
+      },
+      "mean_AP": 0.9027817984590076
+    },
+    "elapsed_seconds": 10683.012430667877,
+    "lr_end": 5.697254334968704e-14
+  }
+]

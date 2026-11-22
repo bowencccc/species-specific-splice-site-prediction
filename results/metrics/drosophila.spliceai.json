@@ -1,0 +1,17 @@
+{
+  "species": "drosophila",
+  "model": "spliceai",
+  "input": "data/site_scores/drosophila.spliceai.tsv.gz",
+  "metric": "sklearn.metrics.average_precision_score (exact tied-score handling)",
+  "donor": {
+    "n_candidates": 2457561,
+    "n_positives": 8858,
+    "AP": 0.542082884150027
+  },
+  "acceptor": {
+    "n_candidates": 2492693,
+    "n_positives": 8390,
+    "AP": 0.5367767149367773
+  },
+  "mean_AP": 0.5394297995434021
+}

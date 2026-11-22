@@ -1,0 +1,17 @@
+{
+  "species": "human",
+  "model": "cnn_mamba_k7_human",
+  "input": "data/site_scores/human.cnn_mamba_k7_human.tsv.gz",
+  "metric": "sklearn.metrics.average_precision_score (exact tied-score handling)",
+  "donor": {
+    "n_candidates": 35526480,
+    "n_positives": 36816,
+    "AP": 0.7938029184524026
+  },
+  "acceptor": {
+    "n_candidates": 50020193,
+    "n_positives": 36781,
+    "AP": 0.7929681293412963
+  },
+  "mean_AP": 0.7933855238968495
+}

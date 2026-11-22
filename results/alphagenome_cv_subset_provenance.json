@@ -1,0 +1,21 @@
+{
+  "scope": "April-16 AlphaGenome fold3/valid candidates restricted to chr1 and chr9; canonical GT/AG only",
+  "candidate_count": 42113,
+  "positive_count": 12489,
+  "truth": "CHESS 3.1.3 union of all-transcript exon-chain splice boundaries",
+  "alphagenome_score": "raw Probability; no SSU multiplication",
+  "upstream_filter": "April-16 input contained only AlphaGenome Probability >= 0.1",
+  "cnn_mamba_source": "data/site_scores/human.cnn_mamba_k7_human.tsv.gz",
+  "cnn_mamba_source_sha256": "96f5601e9a2d7a98445f240d34592dd220695d9c6bd39280408a927b26ae0069",
+  "alphagenome_candidate_join_source_sha256": "5c1852fb75566968872e63b5a2e7142c28742fd61cf411f4f49c4deaf8df4497",
+  "spliceai_source_sha256": "a194af5daebcd413123411dd0c57ff3f912346cf6e67421ffcdc38d37ba3bb2e",
+  "original_april16_input_sha256": "477b0b6eccd71b4448ce2e76fa7e0dd75221580dde9f4ecef9861f64b2434a0b",
+  "coordinate_conversion": {
+    "plus_donor_motif_pos1": "boundary_pos1 + 1",
+    "plus_acceptor_motif_pos1": "boundary_pos1 - 2",
+    "minus_donor_motif_pos1": "boundary_pos1 - 2",
+    "minus_acceptor_motif_pos1": "boundary_pos1 + 1"
+  },
+  "metric": "sklearn.metrics.average_precision_score with tied scores handled exactly",
+  "note": "This architecture-matched analysis supersedes the historical 0.920 pure-Mamba value when discussing CNN--Mamba-k7."
+}

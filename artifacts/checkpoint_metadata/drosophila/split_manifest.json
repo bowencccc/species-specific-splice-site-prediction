@@ -1,0 +1,31 @@
+{
+  "species": "drosophila",
+  "reference": "RefSeq FlyBase Release 6.54",
+  "data_root": "/home/bowencccc/ssm_splice_site/data_dmel_10kb",
+  "selection": "existing NPZ windows selected by chromosome; no regeneration",
+  "window_size": 10000,
+  "stride": 5000,
+  "splits": {
+    "train": {
+      "chromosomes": [
+        "chr2L",
+        "chr2R",
+        "chr3L",
+        "chr4"
+      ],
+      "window_count": 15135
+    },
+    "val": {
+      "chromosomes": [
+        "chr3R"
+      ],
+      "window_count": 6221
+    },
+    "test": {
+      "chromosomes": [
+        "chrX"
+      ],
+      "window_count": 4635
+    }
+  }
+}

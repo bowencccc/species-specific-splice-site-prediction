@@ -1,0 +1,17 @@
+{
+  "species": "arabidopsis",
+  "model": "cnn_mamba_k7_human",
+  "input": "data/site_scores/arabidopsis.cnn_mamba_k7_human.tsv.gz",
+  "metric": "sklearn.metrics.average_precision_score (exact tied-score handling)",
+  "donor": {
+    "n_candidates": 3167995,
+    "n_positives": 34461,
+    "AP": 0.7113572980535848
+  },
+  "acceptor": {
+    "n_candidates": 3592935,
+    "n_positives": 35037,
+    "AP": 0.6637173057743079
+  },
+  "mean_AP": 0.6875373019139464
+}

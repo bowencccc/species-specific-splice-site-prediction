@@ -1,0 +1,17 @@
+{
+  "species": "drosophila",
+  "model": "cnn_mamba_k7_species",
+  "input": "data/site_scores/drosophila.cnn_mamba_k7_species.tsv.gz",
+  "metric": "sklearn.metrics.average_precision_score (exact tied-score handling)",
+  "donor": {
+    "n_candidates": 2457561,
+    "n_positives": 8858,
+    "AP": 0.8727085345245993
+  },
+  "acceptor": {
+    "n_candidates": 2492693,
+    "n_positives": 8390,
+    "AP": 0.9023915317202329
+  },
+  "mean_AP": 0.8875500331224161
+}

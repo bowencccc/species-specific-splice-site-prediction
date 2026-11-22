@@ -1,0 +1,29 @@
+{
+  "adjacent_exon_pairs": 71758,
+  "annotation": "/home/bowencccc/chicken_mouse_data/GCF_000001735.4/genomic.gff",
+  "annotation_noncanonical_or_sequence_mismatch_sites": {
+    "acceptor": 226,
+    "donor": 615
+  },
+  "annotation_sha256": "63d0744c0a02bffc23b72283ebabeeef39a3e7e6283acec864656fde8eafefb3",
+  "annotation_unique_acceptor_sites": 35263,
+  "annotation_unique_donor_sites": 35076,
+  "candidate_counts": {
+    "acceptor": 3592935,
+    "donor": 3167995
+  },
+  "candidate_file": "/home/bowencccc/fig1_unified/candidates/arabidopsis.canonical_candidates.tsv.gz",
+  "candidate_file_sha256": "a1acfc1c321879f14b66ddbd80b604574e3d770a76030c47b3ecad71fccf9f1a",
+  "coordinate_definition": "pos is 1-based forward-reference start of the canonical dinucleotide; plus donor/acceptor=GT/AG and minus donor/acceptor=AC/CT",
+  "exon_rows": 87301,
+  "fasta": "/home/bowencccc/chicken_mouse_data/GCF_000001735.4/GCF_000001735.4_TAIR10.1_genomic.fna",
+  "fasta_sha256": "de99316d1d5597e9a5d40d943ff919c17d59b77116354a5d388b183b6f21075f",
+  "invalid_or_overlapping_adjacent_pairs_skipped": 0,
+  "label_definition": "all-transcript adjacent-exon intron boundary union, deduplicated by (chrom,strand,role,pos); no protein-coding filter",
+  "positive_counts": {
+    "acceptor": 35037,
+    "donor": 34461
+  },
+  "species": "arabidopsis",
+  "transcripts_with_exons": 15543
+}

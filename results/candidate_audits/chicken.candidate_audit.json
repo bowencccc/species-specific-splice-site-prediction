@@ -1,0 +1,29 @@
+{
+  "adjacent_exon_pairs": 132737,
+  "annotation": "/home/bowencccc/chicken_mouse_data/GCF_016699485.2/genomic.gff",
+  "annotation_noncanonical_or_sequence_mismatch_sites": {
+    "acceptor": 110,
+    "donor": 323
+  },
+  "annotation_sha256": "8081150e4adad07762ec94e000d156eb3f09f92132a7a602fff2e35d461e32e5",
+  "annotation_unique_acceptor_sites": 28058,
+  "annotation_unique_donor_sites": 29287,
+  "candidate_counts": {
+    "acceptor": 28351357,
+    "donor": 20466346
+  },
+  "candidate_file": "/home/bowencccc/fig1_unified/candidates/chicken.canonical_candidates.tsv.gz",
+  "candidate_file_sha256": "1d17b1c887e65ca95b55f6593ade2e0e40fb086be41442d29b5832493b4f193f",
+  "coordinate_definition": "pos is 1-based forward-reference start of the canonical dinucleotide; plus donor/acceptor=GT/AG and minus donor/acceptor=AC/CT",
+  "exon_rows": 144266,
+  "fasta": "/home/bowencccc/chicken_mouse_data/GCF_016699485.2/GCF_016699485.2_bGalGal1.mat.broiler.GRCg7b_genomic.fna",
+  "fasta_sha256": "c00276960581c387ff99818d21159bff8275190526f2d34ae92d531f5afb498f",
+  "invalid_or_overlapping_adjacent_pairs_skipped": 0,
+  "label_definition": "all-transcript adjacent-exon intron boundary union, deduplicated by (chrom,strand,role,pos); no protein-coding filter",
+  "positive_counts": {
+    "acceptor": 27948,
+    "donor": 28964
+  },
+  "species": "chicken",
+  "transcripts_with_exons": 11529
+}

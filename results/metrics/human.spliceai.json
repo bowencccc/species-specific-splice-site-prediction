@@ -1,0 +1,17 @@
+{
+  "species": "human",
+  "model": "spliceai",
+  "input": "data/site_scores/human.spliceai.tsv.gz",
+  "metric": "sklearn.metrics.average_precision_score (exact tied-score handling)",
+  "donor": {
+    "n_candidates": 35526480,
+    "n_positives": 36816,
+    "AP": 0.7880190819648072
+  },
+  "acceptor": {
+    "n_candidates": 50020193,
+    "n_positives": 36781,
+    "AP": 0.7892967841540701
+  },
+  "mean_AP": 0.7886579330594387
+}

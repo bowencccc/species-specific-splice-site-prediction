@@ -1,0 +1,66 @@
+{
+  "species": "chicken",
+  "reference": "RefSeq GCF_016699485.2",
+  "data_root": "/home/bowencccc/ssm_splice_site/data_chicken_ref_splice_10kb_test_chr1",
+  "selection": "existing NPZ windows selected by chromosome; no regeneration",
+  "window_size": 10000,
+  "stride": 5000,
+  "splits": {
+    "train": {
+      "chromosomes": [
+        "chr3",
+        "chr4",
+        "chr5",
+        "chr6",
+        "chr7",
+        "chr8",
+        "chr9",
+        "chr10",
+        "chr11",
+        "chr12",
+        "chr13",
+        "chr14",
+        "chr15",
+        "chr16",
+        "chr17",
+        "chr18",
+        "chr19",
+        "chr20",
+        "chr21",
+        "chr22",
+        "chr23",
+        "chr24",
+        "chr25",
+        "chr26",
+        "chr27",
+        "chr28",
+        "chr29",
+        "chr30",
+        "chr31",
+        "chr32",
+        "chr33",
+        "chr34",
+        "chr35",
+        "chr36",
+        "chr37",
+        "chr38",
+        "chr39",
+        "chrW",
+        "chrZ"
+      ],
+      "window_count": 88432
+    },
+    "val": {
+      "chromosomes": [
+        "chr2"
+      ],
+      "window_count": 14504
+    },
+    "test": {
+      "chromosomes": [
+        "chr1"
+      ],
+      "window_count": 19482
+    }
+  }
+}

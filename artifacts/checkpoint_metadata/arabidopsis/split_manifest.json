@@ -1,0 +1,30 @@
+{
+  "species": "arabidopsis",
+  "reference": "RefSeq TAIR10.1/Araport",
+  "data_root": "/home/bowencccc/ssm_splice_site/data_arabidopsis_ref_splice_10kb_test_chr1",
+  "selection": "existing NPZ windows selected by chromosome; no regeneration",
+  "window_size": 10000,
+  "stride": 5000,
+  "splits": {
+    "train": {
+      "chromosomes": [
+        "chr2",
+        "chr3",
+        "chr5"
+      ],
+      "window_count": 19481
+    },
+    "val": {
+      "chromosomes": [
+        "chr4"
+      ],
+      "window_count": 5048
+    },
+    "test": {
+      "chromosomes": [
+        "chr1"
+      ],
+      "window_count": 8614
+    }
+  }
+}

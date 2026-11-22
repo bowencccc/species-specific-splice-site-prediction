@@ -1,0 +1,29 @@
+{
+  "adjacent_exon_pairs": 28798,
+  "annotation": "/home/bowencccc/ssm_splice_site/drosophila_annotation.gtf",
+  "annotation_noncanonical_or_sequence_mismatch_sites": {
+    "acceptor": 25,
+    "donor": 103
+  },
+  "annotation_sha256": "8405bd41e42bce6b3385667daff80163c5059eefc719e0ea691552fa05f4cc91",
+  "annotation_unique_acceptor_sites": 8415,
+  "annotation_unique_donor_sites": 8961,
+  "candidate_counts": {
+    "acceptor": 2492693,
+    "donor": 2457561
+  },
+  "candidate_file": "/home/bowencccc/fig1_unified/candidates/drosophila.canonical_candidates.tsv.gz",
+  "candidate_file_sha256": "04c12e719ae76baea6b0080a79faff07d899b4d04550e3a64bfbc276cf63ddaf",
+  "coordinate_definition": "pos is 1-based forward-reference start of the canonical dinucleotide; plus donor/acceptor=GT/AG and minus donor/acceptor=AC/CT",
+  "exon_rows": 34893,
+  "fasta": "/home/bowencccc/ssm_splice_site/GCF_000001215.4_Release_6_plus_ISO1_MT_genomic.fna",
+  "fasta_sha256": "4e14dbd8ea213a19ebf27057ab62a57ca83951e79ae0c2501ae4c460b7c3d415",
+  "invalid_or_overlapping_adjacent_pairs_skipped": 0,
+  "label_definition": "all-transcript adjacent-exon intron boundary union, deduplicated by (chrom,strand,role,pos); no protein-coding filter",
+  "positive_counts": {
+    "acceptor": 8390,
+    "donor": 8858
+  },
+  "species": "drosophila",
+  "transcripts_with_exons": 6095
+}

@@ -1,0 +1,19 @@
+# Large or regenerable inputs and outputs
+data/raw/
+data/processed/
+data/candidates/*.tsv.gz
+data/site_scores/*.tsv.gz
+data/alphagenome_tiles/
+checkpoints/**/*.pt
+runs/
+
+# Python/editor artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Credentials
+*api_key*
+.env

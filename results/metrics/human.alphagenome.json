@@ -1,0 +1,17 @@
+{
+  "species": "human",
+  "model": "alphagenome",
+  "input": "data/site_scores/human.alphagenome.tsv.gz",
+  "metric": "sklearn.metrics.average_precision_score (exact tied-score handling)",
+  "donor": {
+    "n_candidates": 35526480,
+    "n_positives": 36816,
+    "AP": 0.857514870808443
+  },
+  "acceptor": {
+    "n_candidates": 50020193,
+    "n_positives": 36781,
+    "AP": 0.8538591400469017
+  },
+  "mean_AP": 0.8556870054276724
+}

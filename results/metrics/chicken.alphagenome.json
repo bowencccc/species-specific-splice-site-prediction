@@ -1,0 +1,17 @@
+{
+  "species": "chicken",
+  "model": "alphagenome",
+  "input": "data/site_scores/chicken.alphagenome.tsv.gz",
+  "metric": "sklearn.metrics.average_precision_score (exact tied-score handling)",
+  "donor": {
+    "n_candidates": 20466346,
+    "n_positives": 28964,
+    "AP": 0.8809817953102413
+  },
+  "acceptor": {
+    "n_candidates": 28351357,
+    "n_positives": 27948,
+    "AP": 0.8896412350283434
+  },
+  "mean_AP": 0.8853115151692923
+}

@@ -1,0 +1,17 @@
+{
+  "species": "drosophila",
+  "model": "alphagenome",
+  "input": "data/site_scores/drosophila.alphagenome.tsv.gz",
+  "metric": "sklearn.metrics.average_precision_score (exact tied-score handling)",
+  "donor": {
+    "n_candidates": 2457561,
+    "n_positives": 8858,
+    "AP": 0.5476694389103376
+  },
+  "acceptor": {
+    "n_candidates": 2492693,
+    "n_positives": 8390,
+    "AP": 0.595202267143021
+  },
+  "mean_AP": 0.5714358530266793
+}

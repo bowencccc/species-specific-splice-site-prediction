@@ -1,0 +1,29 @@
+{
+  "adjacent_exon_pairs": 165326,
+  "annotation": "/home/bowencccc/ssm_splice_site/chess3.1.3.GRCh38.gtf",
+  "annotation_noncanonical_or_sequence_mismatch_sites": {
+    "acceptor": 93,
+    "donor": 549
+  },
+  "annotation_sha256": "457244782edde2ec7c3b35b38c4810e7a54332ce3acbe102f4281e99ae470ab0",
+  "annotation_unique_acceptor_sites": 36874,
+  "annotation_unique_donor_sites": 37365,
+  "candidate_counts": {
+    "acceptor": 50020193,
+    "donor": 35526480
+  },
+  "candidate_file": "/home/bowencccc/fig1_unified/candidates/human.canonical_candidates.tsv.gz",
+  "candidate_file_sha256": "2e393d3ff5660e8a892135901fe2d66e7c23d5e2fa35864e518070e05a2f3b12",
+  "coordinate_definition": "pos is 1-based forward-reference start of the canonical dinucleotide; plus donor/acceptor=GT/AG and minus donor/acceptor=AC/CT",
+  "exon_rows": 186644,
+  "fasta": "/home/bowencccc/ssm_splice_site/GCF_000001405.40_GRCh38.p14_genomic.fna",
+  "fasta_sha256": "df6e4918316e05a9cc1fd29c352841d3678b607d7a436819cd43371b52c814c0",
+  "invalid_or_overlapping_adjacent_pairs_skipped": 0,
+  "label_definition": "all-transcript adjacent-exon intron boundary union, deduplicated by (chrom,strand,role,pos); no protein-coding filter",
+  "positive_counts": {
+    "acceptor": 36781,
+    "donor": 36816
+  },
+  "species": "human",
+  "transcripts_with_exons": 21318
+}
