@@ -1,5 +1,7 @@
 # Species-Specific Splice Site Prediction with a Hybrid Convolutional and Bidirectional Selective State Space Model
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24460070.svg)](https://doi.org/10.5281/zenodo.24460070)
+
 Train and evaluate splice-site predictors that combine local convolutional
 features with bidirectional selective state space layers. This repository
 contains the splice-only CNN--Mamba-k7 implementation, exact four-species
@@ -93,6 +95,11 @@ Download `SHA256SUMS` from the same release and verify the files with
 split, selected epoch, and test result for each model are recorded under
 [`artifacts/checkpoint_metadata/`](artifacts/checkpoint_metadata/).
 
+The versioned source archive is permanently preserved on Zenodo under
+[DOI `10.5281/zenodo.24460070`](https://doi.org/10.5281/zenodo.24460070).
+The concept DOI for all current and future versions is
+[`10.5281/zenodo.24460069`](https://doi.org/10.5281/zenodo.24460069).
+
 ## Data setup
 
 Place genomes, annotations, and prepared NPZ windows at the paths in
@@ -182,6 +189,8 @@ If you use this software or benchmark, please cite:
 > preparation, 2026.
 
 Machine-readable citation metadata are available in [`CITATION.cff`](CITATION.cff).
+For reproducibility, cite the archived `v1.0.0` software release using
+[DOI `10.5281/zenodo.24460070`](https://doi.org/10.5281/zenodo.24460070).
 
 ## License
 
