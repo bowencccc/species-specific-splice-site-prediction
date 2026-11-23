@@ -20,7 +20,10 @@ and 0.707 and 0.733 for SpliceAI. At recall 0.92, the corresponding values were
 and 0.664 for SpliceAI. Thus, the models had similar average precision but
 different operating characteristics: AlphaGenome was strongest at the
 prespecified moderate-recall points, whereas CNN--Mamba (human-trained) retained higher
-precision in the high-recall regime.
+precision in the high-recall regime. Because the subset was prefiltered using
+AlphaGenome's own raw splice-site probability, these results describe a
+restricted shared-site comparison rather than an unbiased whole-chromosome
+benchmark.
 
 ## Figure 6 caption
 
@@ -30,8 +33,8 @@ subset.** Donor and acceptor precision are shown at recall targets of 0.50,
 (human-trained), and the official five-model SpliceAI ensemble. Each point is
 the precision at the first distinct-score threshold whose recall reaches or
 exceeds the target; tied
-scores are included together. Points are offset slightly along the horizontal
-axis within each recall target for visibility. The comparison contains 42,113
+scores are included together. Recall targets are shown at equal spacing, and
+points are offset slightly within each target for visibility. The comparison contains 42,113
 canonical GT/AG candidates on human chromosomes 1 and 9, with labels defined from the union of
 CHESS 3.1.3 transcript exon chains. The AlphaGenome input was prefiltered
 upstream to raw splice-site probability at least 0.1, so this is a

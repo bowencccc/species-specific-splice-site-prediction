@@ -164,21 +164,23 @@ def main() -> None:
 
     y_min = max(0.0, float(plotted["precision_step"].min()) - 0.035)
     fig, axes = plt.subplots(1, 2, figsize=(10.5, 4.45), sharey=True)
-    offsets = {"alphagenome": -0.0035, "cnn_mamba": 0.0, "spliceai": 0.0035}
+    positions = {target: index for index, target in enumerate(figure_targets)}
+    offsets = {"alphagenome": -0.18, "cnn_mamba": 0.0, "spliceai": 0.18}
     for axis, role in zip(axes, ROLES):
         for model in MODELS:
             selected = plotted[(plotted["role"] == role) & (plotted["model"] == model)]
             selected = selected.sort_values("recall_target")
             axis.scatter(
-                selected["recall_target"] + offsets[model], selected["precision_step"],
+                selected["recall_target"].map(positions) + offsets[model],
+                selected["precision_step"],
                 label=MODEL_LABELS[model], color=COLORS[model], marker=MARKERS[model],
                 s=58, edgecolor="white", linewidth=0.6, zorder=3,
             )
         axis.set_title(role.capitalize(), fontsize=14, fontweight="bold")
         axis.set_xlabel("Recall target", fontsize=11)
-        axis.set_xlim(min(figure_targets) - 0.025, max(figure_targets) + 0.025)
-        axis.set_xticks(figure_targets)
-        axis.set_xticklabels([f"{value:.2f}" for value in figure_targets], rotation=30, ha="right")
+        axis.set_xlim(-0.5, len(figure_targets) - 0.5)
+        axis.set_xticks(range(len(figure_targets)))
+        axis.set_xticklabels([f"{value:.2f}" for value in figure_targets])
         axis.set_ylim(y_min, 1.005)
         axis.grid(axis="y", color="#d9d9d9", linewidth=0.8)
         axis.spines[["top", "right"]].set_visible(False)
