@@ -167,6 +167,6 @@ docs/                            methods, data contract, provenance
 
 ## License
 
-Code is released under the [MIT License](LICENSE). Third-party models,
+Code is released under the [GNU General Public License v2.0](LICENSE). Third-party models,
 genomes, annotations, and API outputs retain their respective licenses and
 terms of use.
