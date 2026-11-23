@@ -36,6 +36,10 @@ def main() -> None:
     parser.add_argument("--spliceai-scores", type=Path, required=True)
     parser.add_argument("--cnn-mamba-site-scores", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--per-site-output", type=Path,
+        help="Optional joined per-site TSV or TSV.GZ for downstream PR analysis",
+    )
     args = parser.parse_args()
 
     rows = []
@@ -152,6 +156,35 @@ def main() -> None:
         if observed != target["key"] or int(source["label_chess"]) != target["label"]:
             raise RuntimeError(f"SpliceAI candidate mismatch: {observed} != {target['key']}")
         target["spliceai"] = float(source["spliceai_official_ensemble_probability"])
+
+    if args.per_site_output:
+        args.per_site_output.parent.mkdir(parents=True, exist_ok=True)
+        output_handle = (
+            gzip.open(args.per_site_output, "wt", newline="")
+            if args.per_site_output.suffix == ".gz"
+            else args.per_site_output.open("w", newline="")
+        )
+        with output_handle as handle:
+            fieldnames = [
+                "chrom", "pos", "strand", "role", "label",
+                "alphagenome", "cnn_mamba", "spliceai",
+            ]
+            writer = csv.DictWriter(
+                handle, fieldnames=fieldnames, delimiter="\t", lineterminator="\n",
+            )
+            writer.writeheader()
+            for row in rows:
+                chrom, pos, strand, role = row["key"]
+                writer.writerow({
+                    "chrom": chrom,
+                    "pos": pos,
+                    "strand": strand,
+                    "role": role,
+                    "label": row["label"],
+                    "alphagenome": row["alphagenome"],
+                    "cnn_mamba": row["cnn_mamba"],
+                    "spliceai": row["spliceai"],
+                })
 
     models = ("alphagenome", "cnn_mamba", "spliceai")
     output_rows = []

@@ -36,3 +36,13 @@ candidates, the corrected mean AP values are:
 The April-16 input had already been filtered upstream to AlphaGenome
 probability at least 0.1. These values are therefore a shared-candidate subset
 analysis, not a replacement for the complete canonical-candidate Figure 1.
+
+`scripts/plot_alphagenome_cv_subset_matched_precision.py` computes Figure 6
+from the same joined rows. At each requested recall it uses the first complete
+distinct-score group whose cumulative recall reaches the target; it never
+splits tied predictions to force exact recall. The committed operating-point
+table records the requested recall, achieved recall, score threshold, TP, FP,
+step precision, and interpolated precision. The local joined per-site table is
+not distributed in Git, but all three source-file SHA256 values and the exact
+coordinate conversion are recorded in
+`results/alphagenome_cv_subset_provenance.json`.
