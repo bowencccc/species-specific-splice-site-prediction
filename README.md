@@ -78,6 +78,21 @@ The optional comparison scripts additionally require the official SpliceAI
 models/TensorFlow or the official AlphaGenome client and an API key. They are
 not required to train or run CNN--Mamba.
 
+## Trained models
+
+Trained CNN--Mamba-k7 models for all four species are available from the
+[`v1.0.0` GitHub release](https://github.com/bowencccc/species-specific-splice-site-prediction/releases/tag/v1.0.0):
+
+- `cnn_mamba_k7_human_v1.0.0.pt`
+- `cnn_mamba_k7_chicken_v1.0.0.pt`
+- `cnn_mamba_k7_arabidopsis_v1.0.0.pt`
+- `cnn_mamba_k7_drosophila_v1.0.0.pt`
+
+Download `SHA256SUMS` from the same release and verify the files with
+`sha256sum -c SHA256SUMS`. The exact training configuration, chromosome
+split, selected epoch, and test result for each model are recorded under
+[`artifacts/checkpoint_metadata/`](artifacts/checkpoint_metadata/).
+
 ## Data setup
 
 Place genomes, annotations, and prepared NPZ windows at the paths in
