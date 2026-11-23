@@ -1,18 +1,11 @@
 # Species-Specific Splice Site Prediction with a Hybrid Convolutional and Bidirectional Selective State Space Model
 
-Bowen Chen<sup>1,2,*</sup> and Aleksey V. Zimin<sup>1,3,*</sup>
-
-<sup>1</sup>Center for Computational Biology, Johns Hopkins University, Baltimore, MD<br>
-<sup>2</sup>Department of Computer Science, Johns Hopkins University, Baltimore, MD<br>
-<sup>3</sup>Department of Biomedical Engineering, Johns Hopkins University, Baltimore, MD<br>
-<sup>*</sup>Correspondence: bchen103@jhu.edu; alekseyz@jhu.edu
-
-This repository is the reproducibility package for the qualifying-project
-paper.  It contains the splice-only CNN--Mamba-k7 training and chromosome
-scoring code, the exact four-species benchmark definitions, compact result
-tables, checkpoint metadata, and publication figures.  Large sequence data,
-training windows, checkpoints, and per-site score tables are tracked by
-SHA256 but excluded from Git.
+Train and evaluate splice-site predictors that combine local convolutional
+features with bidirectional selective state space layers. This repository
+contains the splice-only CNN--Mamba-k7 implementation, exact four-species
+benchmark definitions, compact result tables, checkpoint metadata, and
+publication figures. Large sequence data, training windows, checkpoints, and
+per-site score tables are tracked by SHA256 but excluded from Git.
 
 ## Abstract
 
@@ -164,6 +157,16 @@ results/                         final compact numerical results
 figures/                         publication PNG/PDF/SVG files
 docs/                            methods, data contract, provenance
 ```
+
+## Citation
+
+If you use this software or benchmark, please cite:
+
+> Chen B, Zimin AV. Species-Specific Splice Site Prediction with a Hybrid
+> Convolutional and Bidirectional Selective State Space Model. Manuscript in
+> preparation, 2026.
+
+Machine-readable citation metadata are available in [`CITATION.cff`](CITATION.cff).
 
 ## License
 
