@@ -26,8 +26,8 @@ We trained separate models on datasets derived from reference annotations for
 human, chicken, *Arabidopsis thaliana*, and *Drosophila melanogaster*, and
 evaluated them on held-out chromosomes. On human, our model performed
 comparably to SpliceAI (average precision 0.793 versus 0.789) but below
-AlphaGenome (0.856). On the separate April-16 shared-candidate subset of chr1
-and chr9, the architecture-matched CNN--Mamba model reached 0.934, compared
+AlphaGenome (0.856). On the separate shared-site cross-validation subset of
+chr1 and chr9, the human-trained CNN--Mamba model reached 0.934, compared
 with 0.932 for AlphaGenome's raw probability and 0.918 for SpliceAI. In
 *Arabidopsis* and *Drosophila*, models trained on
 species-specific data achieved the highest average precision (0.943 and
@@ -45,7 +45,7 @@ human data transfer poorly.
 
 > Provenance correction: the initially supplied `0.920` April-16 SSM value
 > came from a historical pure-Mamba checkpoint. The abstract above uses the
-> architecture-matched CNN--Mamba-k7 reanalysis (`0.934`). See
+> architecture-matched human-trained CNN--Mamba reanalysis (`0.934`). See
 > [result provenance](docs/RESULT_PROVENANCE.md).
 
 ## Main result

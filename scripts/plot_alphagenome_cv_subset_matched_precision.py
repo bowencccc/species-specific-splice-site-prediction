@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compute and plot matched-precision points for the April-16 shared subset.
+"""Compute and plot matched-precision points for the shared-site CV subset.
 
 Tied scores are entered as a group. For a target recall, ``precision_step`` is
 the precision at the first distinct-score threshold whose recall reaches or
@@ -20,7 +20,7 @@ import pandas as pd
 MODELS = ("alphagenome", "cnn_mamba", "spliceai")
 MODEL_LABELS = {
     "alphagenome": "AlphaGenome",
-    "cnn_mamba": "CNN–Mamba-k7",
+    "cnn_mamba": "CNN–Mamba (human-trained)",
     "spliceai": "SpliceAI",
 }
 COLORS = {
@@ -45,7 +45,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--figure-targets", type=float, nargs="+",
-        default=[0.50, 0.70, 0.80, 0.90],
+        default=[0.50, 0.70, 0.80, 0.85, 0.90, 0.92],
     )
     parser.add_argument("--grid-step", type=float, default=0.005)
     return parser.parse_args()
@@ -163,20 +163,22 @@ def main() -> None:
         raise ValueError("every figure target must also be present in --targets")
 
     y_min = max(0.0, float(plotted["precision_step"].min()) - 0.035)
-    fig, axes = plt.subplots(1, 2, figsize=(9.0, 4.35), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(10.5, 4.45), sharey=True)
+    offsets = {"alphagenome": -0.0035, "cnn_mamba": 0.0, "spliceai": 0.0035}
     for axis, role in zip(axes, ROLES):
         for model in MODELS:
             selected = plotted[(plotted["role"] == role) & (plotted["model"] == model)]
             selected = selected.sort_values("recall_target")
-            axis.plot(
-                selected["recall_target"], selected["precision_step"],
+            axis.scatter(
+                selected["recall_target"] + offsets[model], selected["precision_step"],
                 label=MODEL_LABELS[model], color=COLORS[model], marker=MARKERS[model],
-                linewidth=2.0, markersize=6.5,
+                s=58, edgecolor="white", linewidth=0.6, zorder=3,
             )
         axis.set_title(role.capitalize(), fontsize=14, fontweight="bold")
         axis.set_xlabel("Recall target", fontsize=11)
-        axis.set_xlim(min(figure_targets) - 0.035, max(figure_targets) + 0.035)
+        axis.set_xlim(min(figure_targets) - 0.025, max(figure_targets) + 0.025)
         axis.set_xticks(figure_targets)
+        axis.set_xticklabels([f"{value:.2f}" for value in figure_targets], rotation=30, ha="right")
         axis.set_ylim(y_min, 1.005)
         axis.grid(axis="y", color="#d9d9d9", linewidth=0.8)
         axis.spines[["top", "right"]].set_visible(False)

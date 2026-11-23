@@ -4,8 +4,8 @@
 
 `results/fig1_values.tsv` is the authoritative primary result table.  It uses
 raw AlphaGenome splice-site probability, the official five-model SpliceAI
-mean, the human-trained CNN--Mamba-k7 model, and (outside human) a
-species-trained CNN--Mamba-k7 model.
+mean, the human-trained CNN--Mamba model, and (outside human) a
+species-trained CNN--Mamba model.
 
 The four reported CNN--Mamba checkpoints are identified by SHA256 in
 `artifacts/external_artifacts.tsv`; their full training configurations,
@@ -29,7 +29,7 @@ candidates, the corrected mean AP values are:
 
 | Model | Donor AP | Acceptor AP | Mean AP |
 |---|---:|---:|---:|
-| CNN--Mamba-k7 | 0.932574 | 0.935476 | **0.934025** |
+| CNN--Mamba (human-trained) | 0.932574 | 0.935476 | **0.934025** |
 | AlphaGenome raw probability | 0.934081 | 0.930820 | 0.932451 |
 | SpliceAI five-model mean | 0.918309 | 0.918220 | 0.918264 |
 
